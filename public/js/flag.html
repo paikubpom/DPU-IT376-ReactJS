@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    table {
+      border-spacing: 0px;
+    }
+
+    #thai .tr-1 {
+      background-color: red;
+      height: 30px;
+    }
+    #thai .tr-2 {
+      background-color: white;
+      height: 30px;
+    }
+    #thai .tr-3 {
+      background-color: blue;
+      height: 60px;
+    }
+    #thai .tr-4 {
+      background-color: white;
+      height: 30px;
+    }
+    #thai .tr-5 {
+      background-color: red;
+      height: 30px;
+    }
+    #thai .td-1 {
+      width: 100px;
+    }
+    #thai .td-2 {
+      width: 100px;
+    }
+    #thai .td-3 {
+      width: 100px;
+    }
+
+    #france .td-1 {
+      background-color: blue;
+      width: 100px;
+      height: 30px;
+    }
+    #france .td-2 {
+      background-color: white;
+      width: 100px;
+      height: 30px;
+    }
+    #france .td-3 {
+      background-color: red;
+      width: 100px;
+      height: 30px;
+    }
+  </style>
+  <body>
+    <h2>รหัส 66110939 ชื่อ หริวงศ์ วิวัฒนะมงคล</h2>
+    <table id="startId">
+      <tr class="tr-1">
+        <td class="td-1"></td>
+        <td class="td-2"></td>
+        <td class="td-3"></td>
+      </tr>
+      <tr class="tr-2">
+        <td class="td-1"></td>
+        <td class="td-2"></td>
+        <td class="td-3"></td>
+      </tr>
+      <tr class="tr-3">
+        <td class="td-1"></td>
+        <td class="td-2"></td>
+        <td class="td-3"></td>
+      </tr>
+      <tr class="tr-4">
+        <td class="td-1"></td>
+        <td class="td-2"></td>
+        <td class="td-3"></td>
+      </tr>
+      <tr class="tr-5">
+        <td class="td-1"></td>
+        <td class="td-2"></td>
+        <td class="td-3"></td>
+      </tr>
+    </table>
+
+    <br />
+    <button onclick="thai()">Thailand Flag</button>
+    <button onclick="france()">France Flag</button>
+  </body>
+
+  <script>
+    let tableId =
+      document.getElementById("startId") ||
+      document.getElementById("thai") ||
+      document.getElementById("france");
+
+    function thai() {
+      if (tableId) {
+        tableId.id = "thai";
+      }
+    }
+    function france() {
+      if (tableId) {
+        tableId.id = "france";
+      }
+    }
+  </script>
+</html>
